@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for event in object_list %}
+    <div>
+        <h2><a href="#">{{ event.title }}</a></h2>
+        <ul>
+            <li>{{ event.description }}</li>
+            <li>{{ event.location }}</li>
+            <li>{{ event.start_date }}</li>
+            <li>{{ event.end_date }}</li>
+            <li>{{ event.price }}</li>
+        </ul>
+    </div>
+{% endfor %}
+{% endblock content %}

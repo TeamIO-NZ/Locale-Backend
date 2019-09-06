@@ -3,7 +3,7 @@
 {% block content %}
     {% for day in object_list %}
         <div>
-            <h2><a href="#">{{ day.title }}</a></h2>
+            <h2><a href="{% url 'day' day.pk %}">{{ day.title }}</a></h2>
             <ul>
                 <li>{{ day.description }}</li>
                 <li>{{ day.date }}</li>
