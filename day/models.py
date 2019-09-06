@@ -19,7 +19,7 @@ class Event(models.Model):
     end_time = models.TimeField();
     location = models.CharField(max_length=200)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    day = models.ForeignKey(Day, on_delete=models.CASCADE)
+    day = models.ForeignKey(Day, on_delete=models.CASCADE, related_name='events')
     
     def __str__(self):
         return self.title

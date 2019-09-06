@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
 {% for event in object_list %}
+
+
     <div>
-        <h2><a href="#">{{ event.title }}</a></h2>
+        <h1>{{ event.day.title }}</h1>
+        <h2><a href="{% url 'day' event.pk %}">{{ event.title }}</a></h2>
         <ul>
             <li>{{ event.description }}</li>
             <li>{{ event.location }}</li>
