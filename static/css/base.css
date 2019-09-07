@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    margin-bottom: 96px;
+}
+
+nav {
+    margin-bottom: 24px;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+}
+
+h1 {
+    margin-bottom: 24px;
+}
+
+h1 .logo {
+    font-size: 48px;
+    color: #166088;
+}
+
+a {
+    color: #166088;
+}
+
+.bg-sapphire {
+    background-color: #166088;
+}
+
+.card {
+    margin-bottom: 12px;
+    box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.1);
+}
+
+.sapphire-btn {
+    display: inline-block;
+    background-color: white;
+    color: #166088;
+    border: solid 2px #166088;
+    border-radius: 25px;
+    padding: 10px 30px;
+    margin-bottom: 24px;
+    transition: 0.1s;
+}
+
+.sapphire-btn:hover {
+    text-decoration: none;
+    background-color: #166088;
+    color: white;
+}
